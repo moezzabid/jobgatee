@@ -1,0 +1,36 @@
+const mongoose=require("mongoose")
+const schemaOffre=new mongoose.Schema({
+    nom:{
+        type:String,
+        required:true,
+    },
+    ref:{
+        type:String,
+        required:true,
+    },
+    description:{
+        type:String,
+        required:true,
+    },
+    dateStart:{
+        type:String,
+        required:true,
+    },
+    dateEnd:{
+        type:String,
+        required:true,
+    },
+    contrat:{
+        type:String,
+        required:true,
+    },
+    salaire:{
+        type:String,
+        required:true,
+    },
+    exigence:{
+        type:String,
+        required:true,
+    }
+})
+module.exports=mongoose.model("offre",schemaOffre)
